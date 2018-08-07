@@ -27,12 +27,11 @@ shows(10,20);
 echo '<hr>';
 shows(10,20,30);
 // func_get_args,func_get_arg获取实参数组
-function shows2(){
+function show2(){
     echo '<pre>';
     var_dump(func_get_args());
-    var_dump(func_get_arg(1));
+    var_dump(func_get_arg(2));
     echo '</pre>';
-}
-echo '<hr>';
-shows2(1,'守帅',3);
+};
+show2(1,2,'ad',4,5);
 

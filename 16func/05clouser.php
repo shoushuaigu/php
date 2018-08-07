@@ -18,8 +18,9 @@ echo '<hr/>';
 function display2($d){
     $d2='外部变量';
     $fn3 = function($data)use($d2){
-        return $data.$d2;
+        return $data.$d2.'实参个数'.count(func_get_args());
     };
     return $fn3($d);
 };
 echo display2('匿名函数调用');
+echo '<hr/>';

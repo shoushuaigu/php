@@ -1,7 +1,7 @@
 <?php
 // 数组的指针
 /* key() current() next() prev() reset() end()*/
-$arr=['html','css','js'];
+$arr=['name'=>'html','css','js'];
 echo '<pre>';
 print_r($arr);
 echo '<pre>';
